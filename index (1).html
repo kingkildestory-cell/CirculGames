@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#050812"><title>CIRCULGIFT — Beyond the Game</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&family=Orbitron:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="noise"></div><div class="glow glow-a"></div><div class="glow glow-b"></div>
+<header class="topbar">
+ <a class="brand" href="#"><span class="brand-symbol">C</span><span>CIRCUL<span class="blue">GIFT</span><small>PLAY BEYOND LIMITS</small></span></a>
+ <nav><button class="nav-link active" data-page="games">Арена</button><button class="nav-link" data-page="gifts">Подарки</button><button class="nav-link" data-page="profile">Профиль</button></nav>
+ <div class="wallet"><span class="coin">◆</span><b id="balance">1 000</b><small>CG</small><button id="dailyBonus" aria-label="Ежедневный бонус">+</button></div>
+</header>
+<main>
+<section class="hero">
+ <div class="hero-copy"><div class="eyebrow"><i></i> THE NEXT LEVEL OF PLAY</div><h1>ИГРАЙ<br><span>НА СВОИХ</span><br>УСЛОВИЯХ<span class="dot">.</span></h1>
+ <p>Открой неоновую арену CIRCULGIFT. Испытай игровые режимы, собирай редкие подарки и создавай свою историю.</p>
+ <div class="hero-actions"><button class="primary" data-scroll="gameGrid">Войти на арену <b>↗</b></button><span class="safe-note"><i></i> DEMO · VIRTUAL CG</span></div></div>
+ <div class="hero-visual"><div class="visual-grid"></div><div class="ring ring-one"></div><div class="ring ring-two"></div><div class="ring ring-three"></div>
+ <svg class="divider" viewBox="0 0 360 360" aria-label="Чертёжный циркуль"><defs><linearGradient id="steel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#efffff"/><stop offset=".42" stop-color="#47caff"/><stop offset="1" stop-color="#1260c7"/></linearGradient></defs>
+ <path d="M160 54 Q180 34 200 54 L211 72 L190 91 L169 72Z" fill="url(#steel)" stroke="#c9f8ff" stroke-width="3"/><circle cx="185" cy="67" r="13" fill="#07101f" stroke="#82e8ff" stroke-width="5"/>
+ <path d="M177 81 L92 294 L84 329 L119 300 L195 88Z" fill="url(#steel)" stroke="#a8efff" stroke-width="3"/><path d="M194 86 L235 283 L277 322 L260 273 L211 72Z" fill="url(#steel)" stroke="#a8efff" stroke-width="3"/>
+ <path d="M84 329 L92 294 L119 300Z M277 322 L235 283 L260 273Z" fill="#e8ffff"/><path d="M164 101 L213 101" stroke="#b8f4ff" stroke-width="7" stroke-linecap="round"/><circle cx="185" cy="67" r="27" fill="none" stroke="#55d9ff" stroke-opacity=".7" stroke-width="2"/></svg>
+ <div class="visual-tag">PRECISION<br><b>IS YOUR POWER</b></div><div class="visual-index">CG / 001</div></div>
+</section>
+<section class="ticker"><div> <span>✦</span> PLAY SMART <span>✦</span> WIN STYLE <span>✦</span> COLLECT RARE <span>✦</span> CIRCULGIFT <span>✦</span> PLAY SMART <span>✦</span> WIN STYLE <span>✦</span> COLLECT RARE <span>✦</span> CIRCULGIFT </div></section>
+<section class="stats"><div><small>YOUR BALANCE</small><b><span id="statBalance">1 000</span> <em>CG</em></b></div><div><small>GAME MODES</small><b>04 <em>LIVE</em></b></div><div><small>YOUR STATUS</small><b>ROOKIE <em>✦</em></b></div></section>
+<section id="gamesPage" class="page-section">
+ <div class="section-heading"><div><div class="eyebrow">01 / GAME LOBBY</div><h2>ВЫБЕРИ СВОЮ ИГРУ</h2><p>Каждый раунд — новый шанс показать стиль.</p></div><span class="live"><i></i> DEMO ARENA</span></div>
+ <div class="game-grid" id="gameGrid">
+ <article class="game-card featured" data-game="wheel"><div class="card-top"><span>01 / CLASSIC</span><b>POPULAR</b></div><div class="game-visual wheel-scene"><div class="wheel-pointer"></div><div class="wheel-disc" id="lobbyWheel"><span>✦</span><span>◆</span><span>✧</span><span>✦</span><span>◆</span><span>✧</span><span>✦</span><span>◆</span></div><div class="wheel-core">CG</div></div><div class="game-info"><div><h3>DRAW WHEEL</h3><p>Поймай свой сектор</p></div><span class="launch">↗</span></div></article>
+ <article class="game-card" data-game="rocket"><div class="card-top"><span>02 / ARCADE</span><b>HIGH RISK</b></div><div class="game-visual rocket-scene"><div class="stars"></div><div class="planet"></div><div class="rocket-ship">◆</div><div class="rocket-trail"></div><div class="mult-preview">2.48<span>x</span></div></div><div class="game-info"><div><h3>ROCKET</h3><p>Успей забрать награду</p></div><span class="launch">↗</span></div></article>
+ <article class="game-card" data-game="slots"><div class="card-top"><span>03 / LUCKY</span><b>JACKPOT</b></div><div class="game-visual slot-scene"><div class="slot-machine"><div class="slot-head">NEON <b>777</b></div><div class="reels"><span>✦</span><span>7</span><span>◆</span></div><div class="slot-foot">LUCKY SPIN</div></div></div><div class="game-info"><div><h3>NEON SLOTS</h3><p>Три символа. Один джекпот.</p></div><span class="launch">↗</span></div></article>
+ <article class="game-card" data-game="dice"><div class="card-top"><span>04 / CHANCE</span><b>QUICK PLAY</b></div><div class="game-visual dice-scene"><div class="dice-glow"></div><div class="big-die">⚄</div><div class="dice-orbit"></div></div><div class="game-info"><div><h3>HIGH / LOW</h3><p>Проверь свою интуицию</p></div><span class="launch">↗</span></div></article>
+ </div>
+</section>
+<section id="giftsPage" class="page-section hidden"><div class="section-heading"><div><div class="eyebrow">02 / COLLECTION</div><h2>ТВОЯ КОЛЛЕКЦИЯ</h2><p>Собирай цифровые трофеи за виртуальные CG.</p></div></div><div class="gift-grid">
+ <article class="gift-card"><div class="gift-art moon">☾</div><small>RARE / 01</small><h3>MOON DROP</h3><p>Лунный артефакт</p><button class="secondary buy-gift" data-cost="250" data-gift="Moon Drop">Забрать · 250 CG</button></article>
+ <article class="gift-card"><div class="gift-art crystal">◆</div><small>EPIC / 02</small><h3>BLUE CRYSTAL</h3><p>Энергия сингулярности</p><button class="secondary buy-gift" data-cost="500" data-gift="Blue Crystal">Забрать · 500 CG</button></article>
+ <article class="gift-card"><div class="gift-art crown">♛</div><small>LEGENDARY / 03</small><h3>NEON CROWN</h3><p>Символ высшего ранга</p><button class="secondary buy-gift" data-cost="800" data-gift="Neon Crown">Забрать · 800 CG</button></article>
+ </div><div class="panel"><h3>МОЙ ИНВЕНТАРЬ</h3><div id="inventory" class="muted">Твои трофеи появятся здесь.</div></div></section>
+<section id="profilePage" class="page-section hidden"><div class="section-heading"><div><div class="eyebrow">03 / PLAYER CARD</div><h2>ПРОФИЛЬ ИГРОКА</h2><p>Твой прогресс в CIRCULGIFT.</p></div></div><div class="profile-layout"><div class="panel profile-card"><div class="avatar">CG</div><h3>PLAYER ONE</h3><p class="muted">Уровень 01 · ROOKIE</p><div class="profile-balance"><small>AVAILABLE BALANCE</small><b id="profileBalance">1 000 CG</b></div></div><div class="panel referral"><div class="eyebrow">INVITE / REWARD</div><h3>ПРИГЛАСИ СВОИХ</h3><p class="muted">Реферальная ссылка пока демонстрационная. Подключение приглашений появится с серверной версией.</p><div class="copy-row"><code id="refLink">https://t.me/CIRCULGIFT_bot?start=demo</code><button class="secondary" id="copyRef">Копировать</button></div></div></div></section>
+</main>
+<footer><span>© 2026 CIRCULGIFT / PLAY BEYOND LIMITS</span><span>DEMO ONLY · VIRTUAL CG · NO CASH VALUE</span></footer>
+<div class="modal-backdrop hidden" id="gameModal"><div class="modal"><button class="close" id="closeModal">×</button><div class="eyebrow">CIRCULGIFT / LIVE ROUND</div><h2 id="modalTitle">DRAW WHEEL</h2><p id="modalDesc" class="muted">Играй в демо-режиме за виртуальные монеты.</p><div class="game-stage" id="gameStage"><div class="mini-wheel" id="miniWheel">✦</div></div><label class="field-label" for="bet">РАЗМЕР РАУНДА · CG</label><input id="bet" type="number" min="10" max="1000" value="50"><div class="modal-actions"><button class="primary" id="playButton">НАЧАТЬ РАУНД <b>↗</b></button><span id="gameMessage" class="muted">Готов к игре?</span></div></div></div><div class="toast" id="toast"></div>
+<script src="app.js"></script></body></html>
